@@ -18,3 +18,33 @@
 }
 
 ```
+
+В настройках Assetic'а теперь можно использовать уже сконфигурированные фильтры
+
+ * StdUglifyFilter (требует npm модуль uglify-js)
+ * StdCoffeeFilter (требует npm модуль coffee-script)
+ * StdLessFilter (требует npm модуль less)
+ * StdCssoFilter (требует npm модуль csso)
+
+```php
+    'admin_js' => array(
+        'assets' => array(
+            // ...
+        ),
+        'filters' => array('?StdUglifyFilter'),
+    ),
+```
+
+или
+
+
+```php
+    'admin_js' => array(
+        'assets' => array(
+            // ...
+        ),
+        'filters' => array(
+            '?StdUglifyFilter' => ''
+        ),
+    ),
+```
