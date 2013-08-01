@@ -19,6 +19,8 @@
 
 ```
 
+После этого в `config/application.config.php` нужно в раздел `modules` добавить модуль `StdlibAssetic`
+
 В настройках Assetic'а теперь можно использовать уже сконфигурированные фильтры
 
  * StdUglifyFilter (требует npm модуль uglify-js)
