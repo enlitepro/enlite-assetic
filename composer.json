@@ -1,0 +1,13 @@
+{
+    "name": "zf2/stdlib-assetic",
+    "autoload": {
+        "psr-0": {
+            "StdlibAssetic": "src/"
+        }
+    },
+    "require": {
+        "widmogrod/zf2-assetic-module": "1.*",
+        "zendframework/zend-modulemanager": "~2.2",
+        "zendframework/zend-servicemanager": "~2.2"
+    }
+}
