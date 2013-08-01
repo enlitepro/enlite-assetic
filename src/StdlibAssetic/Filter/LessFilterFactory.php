@@ -1,6 +1,6 @@
 <?php
 
-namespace Stdlib\Filter;
+namespace StdlibAssetic\Filter;
 
 use Assetic\Filter\FilterInterface;
 use Assetic\Filter\LessFilter;

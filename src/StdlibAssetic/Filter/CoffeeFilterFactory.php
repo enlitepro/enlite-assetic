@@ -1,6 +1,6 @@
 <?php
 
-namespace Stdlib\Filter;
+namespace StdlibAssetic\Filter;
 
 use Assetic\Filter\CoffeeScriptFilter;
 use Assetic\Filter\FilterInterface;
