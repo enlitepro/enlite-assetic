@@ -3,7 +3,7 @@
  * @author Evgeny Shpilevsky <evgeny@shpilevsky.com>
  */
 
-namespace StdlibAssetic\Filter;
+namespace EnliteAssetic\Filter;
 
 
 use Assetic\Filter\FilterInterface;

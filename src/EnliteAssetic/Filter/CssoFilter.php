@@ -3,7 +3,7 @@
  * @author Evgeny Shpilevsky <evgeny@shpilevsky.com>
  */
 
-namespace StdlibAssetic\Filter;
+namespace EnliteAssetic\Filter;
 
 use Assetic\Asset\AssetInterface;
 use Assetic\Exception\FilterException;

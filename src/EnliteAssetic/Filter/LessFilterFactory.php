@@ -1,14 +1,14 @@
 <?php
 
-namespace StdlibAssetic\Filter;
+namespace EnliteAssetic\Filter;
 
-use Assetic\Filter\CoffeeScriptFilter;
 use Assetic\Filter\FilterInterface;
+use Assetic\Filter\LessFilter;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\ServiceManager\ServiceManager;
 
-class CoffeeFilterFactory implements FactoryInterface
+class LessFilterFactory implements FactoryInterface
 {
 
     /**
@@ -19,7 +19,12 @@ class CoffeeFilterFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        $filter = new CoffeeScriptFilter('./node_modules/.bin/coffee');
+        $filter = new LessFilter(
+            '/usr/bin/node',
+            array(
+                 getcwd() . "/node_modules/"
+            )
+        );
 
         return $filter;
     }

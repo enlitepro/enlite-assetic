@@ -1,6 +1,6 @@
 <?php
 
-namespace StdlibAssetic\Filter;
+namespace EnliteAssetic\Filter;
 
 use Assetic\Filter\FilterInterface;
 use Zend\ServiceManager\FactoryInterface;

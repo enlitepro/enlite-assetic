@@ -1,14 +1,14 @@
 <?php
 
-namespace StdlibAssetic\Filter;
+namespace EnliteAssetic\Filter;
 
+use Assetic\Filter\CoffeeScriptFilter;
 use Assetic\Filter\FilterInterface;
-use Assetic\Filter\UglifyJs2Filter;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\ServiceManager\ServiceManager;
 
-class UglifyFilterFactory implements FactoryInterface
+class CoffeeFilterFactory implements FactoryInterface
 {
 
     /**
@@ -19,9 +19,7 @@ class UglifyFilterFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        $filter = new UglifyJs2Filter('./node_modules/.bin/uglifyjs');
-        $filter->setCompress(true);
-        $filter->setMangle(true);
+        $filter = new CoffeeScriptFilter('./node_modules/.bin/coffee');
 
         return $filter;
     }

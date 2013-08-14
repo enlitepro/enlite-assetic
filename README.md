@@ -1,43 +1,42 @@
-Установка
-=========
+Assetic filter via module for Zend Framework 2
+==============================================
 
-Для установки необходимо добавить в composer.json следующие строки
+
+INSTALL
+=======
+
+The recommended way to install is through composer.
 
 ```json
 {
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://packages.dev.infonet.by/"
-        }
-    ],
-
     "require": {
-        "zf2/stdlib-assetic": "1.*"
-    },
+        "enlitepro/enlite-assetic": "1.*"
+    }
 }
-
 ```
 
-После этого в `config/application.config.php` нужно в раздел `modules` добавить модуль `StdlibAssetic`
+USAGE
+=====
 
-В настройках Assetic'а теперь можно использовать уже сконфигурированные фильтры
+Add `EnliteAssetic` to your `config/application.config.php` to enable module.
 
- * StdUglifyFilter (требует npm модуль uglify-js)
- * StdCoffeeFilter (требует npm модуль coffee-script)
- * StdLessFilter (требует npm модуль less)
- * StdCssoFilter (требует npm модуль csso)
+
+ * EnliteUglifyFilter (require npm module uglify-js)
+ * EnliteCoffeeFilter (require npm module coffee-script)
+ * EnliteLessFilter (require npm module less)
+ * EnliteCssoFilter (require npm module csso)
+ * EnliteUglifycssFilter (require npm module uglifycss)
 
 ```php
     'admin_js' => array(
         'assets' => array(
             // ...
         ),
-        'filters' => array('?StdUglifyFilter'),
+        'filters' => array('?EnliteUglifyFilter'),
     ),
 ```
 
-или
+or
 
 
 ```php
@@ -46,7 +45,7 @@
             // ...
         ),
         'filters' => array(
-            '?StdUglifyFilter' => ''
+            '?EnliteCoffeeFilter' => ''
         ),
     ),
 ```

@@ -1,8 +1,8 @@
 {
-    "name": "zf2/stdlib-assetic",
+    "name": "enlitepro/enlite-assetic",
     "autoload": {
         "psr-0": {
-            "StdlibAssetic": "src/"
+            "EnliteAssetic": "src/"
         }
     },
     "require": {

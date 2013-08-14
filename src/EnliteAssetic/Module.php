@@ -1,5 +1,5 @@
 <?php
-namespace StdlibAssetic;
+namespace EnliteAssetic;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;

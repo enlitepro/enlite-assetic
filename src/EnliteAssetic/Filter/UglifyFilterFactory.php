@@ -1,14 +1,14 @@
 <?php
 
-namespace StdlibAssetic\Filter;
+namespace EnliteAssetic\Filter;
 
 use Assetic\Filter\FilterInterface;
-use Assetic\Filter\LessFilter;
+use Assetic\Filter\UglifyJs2Filter;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\ServiceManager\ServiceManager;
 
-class LessFilterFactory implements FactoryInterface
+class UglifyFilterFactory implements FactoryInterface
 {
 
     /**
@@ -19,12 +19,9 @@ class LessFilterFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        $filter = new LessFilter(
-            '/usr/bin/node',
-            array(
-                 getcwd() . "/node_modules/"
-            )
-        );
+        $filter = new UglifyJs2Filter('./node_modules/.bin/uglifyjs');
+        $filter->setCompress(true);
+        $filter->setMangle(true);
 
         return $filter;
     }
