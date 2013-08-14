@@ -1,5 +1,17 @@
 {
     "name": "enlitepro/enlite-assetic",
+    "authors": [
+        {
+            "name": "Evgeny Shpilevsky",
+            "email": "evgeny@shpilevsky.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "framework",
+        "zf2",
+        "assetic"
+    ],
     "autoload": {
         "psr-0": {
             "EnliteAssetic": "src/"
