@@ -6,7 +6,8 @@ return array(
             'StdUglifyFilter' => 'StdlibAssetic\Filter\UglifyFilterFactory',
             'StdCoffeeFilter' => 'StdlibAssetic\Filter\CoffeeFilterFactory',
             'StdLessFilter' => 'StdlibAssetic\Filter\LessFilterFactory',
-            'StdCssoFilter' => 'StdlibAssetic\Filter\CssoFilterFactory'
+            'StdCssoFilter' => 'StdlibAssetic\Filter\CssoFilterFactory',
+            'StdUglifycssFilter' => 'StdlibAssetic\Filter\UglifycssFilterFactory',
         )
     )
 );
