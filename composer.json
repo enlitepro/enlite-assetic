@@ -1,5 +1,6 @@
 {
     "name": "enlitepro/enlite-assetic",
+    "license": "MIT",
     "authors": [
         {
             "name": "Evgeny Shpilevsky",
