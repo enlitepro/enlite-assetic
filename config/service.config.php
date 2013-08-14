@@ -3,11 +3,11 @@
 return array(
     'service_manager' => array(
         'factories' => array(
-            'EnliteUglifyFilter' => 'StdlibAssetic\Filter\UglifyFilterFactory',
-            'EnliteCoffeeFilter' => 'StdlibAssetic\Filter\CoffeeFilterFactory',
-            'EnliteLessFilter' => 'StdlibAssetic\Filter\LessFilterFactory',
-            'EnliteCssoFilter' => 'StdlibAssetic\Filter\CssoFilterFactory',
-            'EnliteUglifycssFilter' => 'StdlibAssetic\Filter\UglifycssFilterFactory',
+            'EnliteUglifyFilter' => 'EnliteAssetic\Filter\UglifyFilterFactory',
+            'EnliteCoffeeFilter' => 'EnliteAssetic\Filter\CoffeeFilterFactory',
+            'EnliteLessFilter' => 'EnliteAssetic\Filter\LessFilterFactory',
+            'EnliteCssoFilter' => 'EnliteAssetic\Filter\CssoFilterFactory',
+            'EnliteUglifycssFilter' => 'EnliteAssetic\Filter\UglifycssFilterFactory',
         )
     )
 );
