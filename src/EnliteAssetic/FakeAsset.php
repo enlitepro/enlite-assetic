@@ -7,7 +7,6 @@ namespace EnliteAssetic;
 
 
 use Assetic\Asset\AssetInterface;
-use Assetic\Asset\AssetReference;
 use Assetic\Filter\FilterInterface;
 
 class FakeAsset implements AssetInterface

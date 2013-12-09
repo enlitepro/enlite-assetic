@@ -19,8 +19,11 @@
         }
     },
     "require": {
-        "widmogrod/zf2-assetic-module": "1.*",
-        "zendframework/zend-modulemanager": "~2.2",
-        "zendframework/zend-servicemanager": "~2.2"
+        "widmogrod/zf2-assetic-module":         "~1.0",
+        "zendframework/zend-modulemanager":     "~2.2",
+        "zendframework/zend-servicemanager":    "~2.2"
+    },
+    "require-dev": {
+        "zendframework/zendframework": "~2.2"
     }
 }
