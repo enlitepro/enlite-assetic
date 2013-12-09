@@ -49,3 +49,16 @@ or
         ),
     ),
 ```
+
+
+Capistrano revision inject
+==========================
+
+```php
+    'service_manager' => array(
+        'aliases' => array(
+            'AsseticConfiguration' => 'EnliteAssetic\Configuration'
+        ),
+    )
+```
+

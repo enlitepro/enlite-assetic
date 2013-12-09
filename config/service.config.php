@@ -9,6 +9,8 @@ return array(
             'EnliteCssoFilter' => 'EnliteAssetic\Filter\CssoFilterFactory',
             'EnliteUglifycssFilter' => 'EnliteAssetic\Filter\UglifycssFilterFactory',
             'EnliteNgminFilter' => 'EnliteAssetic\Filter\NgminFilterFactory',
+            //
+            'EnliteAssetic\Configuration' => 'EnliteAssetic\ConfigurationFactory'
         ),
 
         'invokables' => array(

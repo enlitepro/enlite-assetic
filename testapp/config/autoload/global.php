@@ -39,8 +39,5 @@ return array(
         'aliases' => array(
             'AsseticConfiguration' => 'EnliteAssetic\Configuration'
         ),
-        'factories' => array(
-            'EnliteAssetic\Configuration' => 'EnliteAssetic\ConfigurationFactory'
-        )
     )
 );
