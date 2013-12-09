@@ -32,9 +32,15 @@ return array(
         'baseUrl' => '/assets',
     ),
     'service_manager' => array(
-        'invokables' => array(
+//        'invokables' => array(
 //            'AsseticCacheBuster' => 'AsseticBundle\CacheBuster\LastModifiedStrategy',
-            'AsseticCacheBuster' => 'EnliteAssetic\CacheBuster\Capistrano',
+//            'AsseticCacheBuster' => 'EnliteAssetic\CacheBuster\Capistrano',
+//        )
+        'aliases' => array(
+            'AsseticConfiguration' => 'EnliteAssetic\Configuration'
+        ),
+        'factories' => array(
+            'EnliteAssetic\Configuration' => 'EnliteAssetic\ConfigurationFactory'
         )
     )
 );

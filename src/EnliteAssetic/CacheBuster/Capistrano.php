@@ -44,17 +44,6 @@ class Capistrano implements WorkerInterface
      */
     private function getRevision()
     {
-        if (null === $this->revision) {
-            $dir = getcwd();
-            while ($dir && $dir !== '/') {
-                if (file_exists($dir . "/REVISION")) {
-                    $this->revision = file_get_contents($dir . "/REVISION");
-                    break;
-                }
-                $dir = dirname($dir);
-            }
-        }
-
-        return $this->revision;
+        return \EnliteAssetic\Capistrano::getShortRevision();
     }
 }
