@@ -12,6 +12,7 @@ return array(
             'EnliteCssoFilter' => 'EnliteAssetic\Filter\CssoFilterFactory',
             'EnliteUglifycssFilter' => 'EnliteAssetic\Filter\UglifycssFilterFactory',
             'EnliteNgminFilter' => 'EnliteAssetic\Filter\NgminFilterFactory',
+            'HandlebarsFilter' => 'EnliteAssetic\Filter\HandlebarsFilterFactory',
             //
             'EnliteAssetic\Configuration' => 'EnliteAssetic\ConfigurationFactory',
             'EnliteAssetic\Service' => 'EnliteAssetic\ServiceFactory'
