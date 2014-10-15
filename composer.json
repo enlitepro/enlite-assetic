@@ -1,6 +1,7 @@
 {
     "name": "enlitepro/enlite-assetic",
     "license": "MIT",
+    "description": "The module add assetic cache, some filters (coffee, csso, less, ngmin, uglify, uglifycc), support @asset from other collections, put current version to static files",
     "authors": [
         {
             "name": "Evgeny Shpilevsky",
@@ -21,7 +22,9 @@
     "require": {
         "widmogrod/zf2-assetic-module":         "~1.0",
         "zendframework/zend-modulemanager":     "~2.2",
-        "zendframework/zend-servicemanager":    "~2.2"
+        "zendframework/zend-servicemanager":    "~2.2",
+        "kriswallsmith/assetic":                ">=1.0,<1.2"
+
     },
     "require-dev": {
         "zendframework/zendframework": "~2.2"
