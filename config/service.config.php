@@ -13,6 +13,7 @@ return array(
             'EnliteUglifycssFilter' => 'EnliteAssetic\Filter\UglifycssFilterFactory',
             'EnliteNgminFilter' => 'EnliteAssetic\Filter\NgminFilterFactory',
             'HandlebarsFilter' => 'EnliteAssetic\Filter\HandlebarsFilterFactory',
+            'CssVersionUrlFilter' => 'EnliteAssetic\Filter\CssVersionUrlFilterFactory',
             //
             'EnliteAssetic\Configuration' => 'EnliteAssetic\ConfigurationFactory',
             'EnliteAssetic\Service' => 'EnliteAssetic\ServiceFactory'
