@@ -20,6 +20,13 @@ class Service extends AsseticService
     private $cacheAdapter;
 
     /**
+     * The built
+     *
+     * @var bool
+     */
+    private $built = false;
+
+    /**
      * @param Configuration $configuration
      * @param AbstractAdapter $cache
      */
@@ -34,6 +41,9 @@ class Service extends AsseticService
      */
     public function build()
     {
+        if ($this->built) {
+            return;
+        }
         $key = 'assets-manager';
         if ($this->cacheAdapter->hasItem($key)) {
             $data = $this->cacheAdapter->getItem($key);
@@ -46,6 +56,7 @@ class Service extends AsseticService
 
         parent::build();
         $this->cacheAdapter->setItem($key, serialize($this->getAssetManager()));
+        $this->built = true;
     }
 
 } 
