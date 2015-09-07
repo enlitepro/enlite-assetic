@@ -16,7 +16,8 @@ return array(
             'CssVersionUrlFilter' => 'EnliteAssetic\Filter\CssVersionUrlFilterFactory',
             //
             'EnliteAssetic\Configuration' => 'EnliteAssetic\ConfigurationFactory',
-            'EnliteAssetic\Service' => 'EnliteAssetic\ServiceFactory'
+            'EnliteAssetic\Service' => 'EnliteAssetic\ServiceFactory',
+            'EnliteHtmlMinifierFilter' => 'EnliteAssetic\Filter\HtmlMinifierFilterFactory'
         ),
 
         'invokables' => array(
