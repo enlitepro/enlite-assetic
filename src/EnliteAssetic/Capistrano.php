@@ -22,7 +22,7 @@ class Capistrano
             $dir = getcwd();
             while ($dir && $dir !== '/') {
                 if (file_exists($dir . "/REVISION")) {
-                    self::$revision = file_get_contents($dir . "/REVISION");
+                    self::$revision = trim(file_get_contents($dir . "/REVISION"));
                     break;
                 }
                 $dir = dirname($dir);
